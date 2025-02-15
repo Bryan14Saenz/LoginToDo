@@ -1,0 +1,118 @@
+@import 'mixin';
+@import 'variables';
+
+#toDo {
+  @include display-flex;
+  flex-direction: column;
+  width: 800px;
+  height: 400px;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+  border: 1px solid #ffffff40;
+
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: $color2;
+
+    img {
+      width: 40px;
+      margin-right: 5px;
+    }
+  }
+
+  .contenedor-tarea {
+    margin-bottom: 10px;
+
+    input {
+      transition: all 0.5s ease;
+      padding: 5px 10px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      border: 1px solid $color2;
+      color: $color2;
+      background: none;
+
+      &:focus {
+        outline: none;
+        border: 1px solid $color4;
+        scale: 1.05;
+      }
+
+      &::placeholder {
+        color: $color2;
+      }
+    }
+
+    button {
+      transition: all 0.5s ease;
+      margin-left: 10px;
+      padding: 5px 10px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      border: 1px solid $color2;
+      color: $color2;
+      background: none;
+
+      &:hover {
+        scale: 1.05;
+        border: 1px solid $color4;
+      }
+    }
+  }
+
+  .contenedor-tabla {
+    @include display-flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 80%;
+    height: 200px;
+
+    table {
+      thead {
+        tr {
+          th {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 5px 10px;
+            color: $color2;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+
+          td {
+
+            text-align: center;
+            font-size: 1rem;
+            padding: 5px 10px;
+            color: $color2;
+
+            button {
+              transition: all 0.5s ease;
+              margin: 0 5px;
+              padding: 5px;
+              font-size: 0.8rem;
+              border-radius: 5px;
+              border: 1px solid $color2;
+              color: $color2;
+              background: none;
+
+              &:hover {
+                scale: 1.05;
+                border: 1px solid $color4;
+              }
+            }
+
+          }
+        }
+      }
+    }
+    
+  }
+}

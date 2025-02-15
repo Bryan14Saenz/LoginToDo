@@ -1,0 +1,25 @@
+@import 'mixin';
+@import 'variables';
+@import 'inicioSesión';
+@import 'registro';
+@import 'todo';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: url('../Assets/Img/inicio.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main {
+  @include display-flex;
+  width: 100%;
+  height: 100vh;
+}
