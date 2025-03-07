@@ -4,7 +4,6 @@ $(function () {
   // Constantes
   const fragment: DocumentFragment = document.createDocumentFragment();
   const IDBRequest = indexedDB.open('Usuarios', 1);
-  const IDBRequest2 = indexedDB.open('Tareas', 1);
   let db: IDBDatabase;
 
   // Funciones
